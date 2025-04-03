@@ -1,0 +1,13 @@
+body{
+    background-color: darkred;
+    color: white;
+}
+.img{
+    display: grid;
+    grid-template-columns: auto auto auto;    
+
+}
+img {
+    height: 500px;
+    width: auto;
+}
