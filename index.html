@@ -3,49 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trailer</title>
+    <title>Movie Trailers</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Trailers</h1>
-    <div class="img">
-        <img src="Captain amerika.png" alt="" srcset="">
-        <img src="fantastic 4.png" alt="" srcset="">
-        <img src="How to train your dragon.png" alt="" srcset="">
-        <img src="jurasic world.png" alt="" srcset="">
-        <img src="Lilo&stich.png" alt="" srcset="">
-        <img src="Superman.png" alt="" srcset="">    
-        
-    <iframe width="1508" height="848" src="https://www.youtube.com/embed/EtcnLk9AUyw" 
-    title="How to Train Your Dragon - Officiële Trailer (Universal Pictures) - HD | Nederlands ondertiteld" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-    <iframe width="1508" height="848" src="https://www.youtube.com/embed/jan5CFWs9ic" title="Jurassic World Rebirth | Official Trailer" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-    <iframe width="1508" height="848" src="https://www.youtube.com/embed/AzMo-FgRp64" title="The Fantastic Four: First Steps | Official Teaser | Only in Theaters July 25" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-    <iframe width="1508" height="848" src="https://www.youtube.com/embed/1pHDWnXmK7Y" title="Captain America: Brave New World | Official Trailer" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-    <iframe width="1508" height="848" src="https://www.youtube.com/embed/VWqJifMMgZE" title="Lilo &amp; Stitch | Official Trailer | In Theaters May 23" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-    <iframe width="1508" height="848" src="https://www.youtube.com/embed/uhUht6vAsMY" title="Superman | Official Teaser Trailer" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-    </div>
+    <div class="image-gallery">
+        <img src="Captain amerika.png" alt="Captain America" data-video="https://www.youtube.com/embed/1pHDWnXmK7Y" data-description="Captain America: Brave New World | A new adventure begins with Sam Wilson as the new Captain America, facing new enemies and old friends." data-title="Captain America: Brave New World">
+        <img src="fantastic 4.png" alt="Fantastic Four" data-video="https://www.youtube.com/embed/AzMo-FgRp64" data-description="The Fantastic Four: The First Steps into their new cinematic world, bringing these iconic heroes together." data-title="Fantastic Four">
+        <img src="How to train your dragon.png" alt="How to Train Your Dragon" data-video="https://www.youtube.com/embed/EtcnLk9AUyw" data-description="How to Train Your Dragon: A young Viking, Hiccup, befriends a dragon, changing the course of history for both humans and dragons." data-title="How to Train Your Dragon">
+        <img src="jurasic world.png" alt="Jurassic World" data-video="https://www.youtube.com/embed/jan5CFWs9ic" data-description="Jurassic World: A thrilling adventure set in a fully functioning dinosaur theme park that goes horribly wrong." data-title="Jurassic World">
+        <img src="Lilo&stich.png" alt="Lilo & Stitch" data-video="https://www.youtube.com/embed/VWqJifMMgZE" data-description="Lilo & Stitch: A girl adopts a misfit alien creature, leading to heartwarming and adventurous moments." data-title="Lilo & Stitch">
+        <img src="Superman.png" alt="Superman" data-video="https://www.youtube.com/embed/uhUht6vAsMY" data-description="Superman: A new origin story for the iconic superhero, as he comes to terms with his powers and destiny." data-title="Superman">
     </div>
 
+    <div id="movie-info">
+        <div id="video-container">
+            <iframe id="video-frame" width="1508" height="848" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="movie-description-container">
+                <h2 id="movie-title"></h2>
+                <p id="movie-description"></p>
+            </div>
+        </div>
+    </div>
 
-
-    <div>
 </body>
 </html>
